@@ -8,6 +8,8 @@ import IconButton from "@mui/material/IconButton";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import Tooltip from '@mui/material/Tooltip';
+
 
 const Header = () => {
 
@@ -53,6 +55,13 @@ const Header = () => {
                     MenuListProps={{
                     "aria-labelledby": "tools-button"
                     }}
+                    PaperProps={{sx:{
+                        bgcolor:'rgba(115, 44, 2,0.9)', 
+                        color:'white',
+                        "& .MuiMenuItem-root:hover": {
+                        backgroundColor: "rgba(217, 150, 91,0.4)"
+                        },
+                    }}}
                 >
                     <MenuItem onClick={handleClose}>Product Browser</MenuItem>
                     <MenuItem onClick={handleClose}>Batch Browser</MenuItem>
@@ -78,6 +87,13 @@ const Header = () => {
                     MenuListProps={{
                     "aria-labelledby": "reports-button"
                     }}
+                    PaperProps={{sx:{
+                        bgcolor:'rgba(115, 44, 2,0.9)', 
+                        color:'white',
+                        "& .MuiMenuItem-root:hover": {
+                        backgroundColor: "rgba(217, 150, 91,0.4)"
+                        },
+                    }}}
                 >
                     <MenuItem onClick={handleClose}>By Store</MenuItem>
                     <MenuItem onClick={handleClose}>By Category</MenuItem>
@@ -103,6 +119,13 @@ const Header = () => {
                     MenuListProps={{
                     "aria-labelledby": "data-button"
                     }}
+                    PaperProps={{sx:{
+                        bgcolor:'rgba(115, 44, 2,0.9)', 
+                        color:'white',
+                        "& .MuiMenuItem-root:hover": {
+                        backgroundColor: "rgba(217, 150, 91,0.4)"
+                        },
+                    }}}
                 >
                     <MenuItem onClick={handleClose}>Quality</MenuItem>
                     <MenuItem onClick={handleClose}>Download</MenuItem>
@@ -121,6 +144,7 @@ const Header = () => {
                     About
                 </Button>
 
+                <Tooltip title="Account Login">
                 <IconButton
                     size="large"
                     edge="start"
@@ -129,6 +153,7 @@ const Header = () => {
                 >
                     <AccountCircleIcon />
                 </IconButton>
+                </Tooltip>
                 
 
                 
