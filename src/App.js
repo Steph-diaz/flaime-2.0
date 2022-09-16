@@ -1,10 +1,12 @@
-import Table from "./components/Table";
+// import Table from "./components/Table";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="App">
-      <h2>FLAIME 2.0</h2>
-      <Table />
+      
+      {/* <Table /> */}
+      <Header/>
     </div>
   );
 }
