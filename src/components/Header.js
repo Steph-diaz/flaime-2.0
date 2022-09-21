@@ -154,9 +154,6 @@ const Header = () => {
                         <AccountCircleIcon />
                     </IconButton>
                 </Tooltip>
-                
-
-                
                 </Toolbar>
             </AppBar>
         </Box>
